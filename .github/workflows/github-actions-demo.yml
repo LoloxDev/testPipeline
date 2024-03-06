@@ -12,3 +12,5 @@ jobs:
         run: npm i -g vitest
       - name: Run vitest
         run: vitest
+      - name: Run pipeline
+        run: python3 -m pip install semgrep && semgrep scan
